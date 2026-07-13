@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img src="Images/banner.png" alt="A/B Testing Product Analytics Dashboard Banner" width="100%">
+</p>
+
+
 <div align="center">
 
 # 📊 A/B Testing Product Analytics Dashboard
