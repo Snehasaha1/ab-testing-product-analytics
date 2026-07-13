@@ -1,331 +1,289 @@
+<div align="center">
 
-<h1 align="center">📊 A/B Testing Product Analytics Dashboard</h1>
+# 📊 A/B Testing Product Analytics Dashboard
 
-<p align="center">
-An end-to-end Product Analytics project built using <b>Python</b>, <b>MySQL</b>, <b>SQL</b>, and <b>Power BI</b> to evaluate website experiments and deliver business recommendations through interactive dashboards.
+### End-to-End Product Analytics using SQL & Power BI
+
+Analyze • Visualize • Optimize • Recommend
+
+<p>
+
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-Analytics-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)
+
 </p>
 
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql)
-![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow?style=for-the-badge&logo=powerbi)
-![SQL](https://img.shields.io/badge/SQL-Analytics-blue?style=for-the-badge)
-![Git](https://img.shields.io/badge/Git-Version%20Control-red?style=for-the-badge&logo=git)
-
-</p>
+</div>
 
 ---
 
-# 📌 Project Overview
+# 🌟 Project Overview
 
-This project simulates a real-world **A/B Testing Product Analytics workflow** used by modern technology companies to evaluate whether a new product experience should replace an existing one.
+This project demonstrates an end-to-end **Product Analytics** workflow by evaluating the performance of an **A/B Testing experiment**.
 
-The project analyzes the performance of a **Current Website (Control Group)** and a **New Website (Variant Group)** using business metrics including:
+A **Current Website (Control Group)** is compared against a **New Website (Variant Group)** using key business metrics to determine whether the redesigned experience should be deployed.
 
-- Revenue
-- Conversion Rate
-- Purchases
-- Session Duration
-- Pages Viewed
-- User Segmentation
-- Device Performance
-- Browser Performance
-- Traffic Sources
-
-The complete pipeline includes data generation, database modeling, SQL analysis, Power BI dashboards, and executive business recommendations.
+The project combines **SQL**, **Power BI**, **DAX**, and **Business Intelligence** to transform raw experiment data into actionable business insights.
 
 ---
 
 # 🎯 Business Objective
 
-Determine whether the redesigned website delivers measurable business improvements compared to the current website.
+Determine whether the **New Website** improves business performance compared to the **Current Website**.
 
-The analysis answers questions such as:
+The analysis focuses on:
 
-- Which website generates higher revenue?
-- Which website converts more users?
-- Does user engagement improve?
-- Should the new website be deployed to production?
-
----
-
-# 🛠 Technology Stack
-
-| Category | Tools |
-|----------|-------|
-| Programming | Python |
-| Data Processing | Pandas, NumPy |
-| Data Generation | Faker |
-| Database | MySQL |
-| Query Language | SQL |
-| Dashboard | Power BI |
-| Analytics | DAX |
-| Version Control | Git |
-| Repository | GitHub |
+- 💰 Revenue
+- 🛒 Purchases
+- 📈 Conversion Rate
+- ⏱ Session Duration
+- 📄 Pages Viewed
+- 🌍 User Segmentation
+- 💻 Device Performance
+- 🌐 Browser Performance
+- 🚦 Traffic Sources
 
 ---
 
-# 🏗 Project Architecture
+# 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| 📊 Dashboard | Power BI |
+| 🗄 Database | SQL |
+| 📐 Data Modeling | Star Schema |
+| 📈 Analytics | DAX |
+| 📉 Visualization | Power BI Visuals |
+| 📋 Reporting | Executive Dashboards |
+
+---
+
+# 🏗 Project Workflow
 
 ```text
-Python
-   │
-Generate Synthetic Data
-   │
-CSV Files
-   │
-MySQL Database
-   │
-Star Schema
-   │
-SQL Analytics
-   │
-Power BI Dashboard
-   │
-Business Insights & Recommendations
+Business Problem
+        │
+        ▼
+A/B Testing Dataset
+        │
+        ▼
+SQL Data Model
+        │
+        ▼
+Power BI
+        │
+        ▼
+Interactive Dashboards
+        │
+        ▼
+Business Insights
+        │
+        ▼
+Executive Recommendations
 ```
-
----
-
-# ⭐ Database Design
-
-The project uses a **Star Schema** for efficient analytical reporting.
-
-## Fact Table
-
-- fact_experiment
-
-## Dimension Tables
-
-- dim_user
-- dim_date
-- dim_device
-- dim_browser
-- dim_traffic_source
-- dim_experiment
 
 ---
 
 # 📊 Dashboard Pages
 
-## 1️⃣ Executive Overview
+---
 
-Provides a high-level summary of the experiment.
+## 📈 Executive Overview
+
+A high-level summary of the experiment with executive KPIs.
 
 ### KPIs
 
-- Total Users
-- Total Revenue
-- Total Purchases
-- Conversion Rate
-- Average Session Duration
-- Average Pages Viewed
+✅ Total Revenue
+
+✅ Total Purchases
+
+✅ Conversion Rate
+
+✅ Average Session Duration
+
+✅ Average Pages Viewed
+
+✅ Total Users
+
+### Interactive Filters
+
+- Experiment
+- Device
+- Browser
+- Traffic Source
+- Date
+
+<img src="01_Executive_Overview.png.png" width="100%">
+
+---
+
+## 🔬 Experiment Deep Dive
+
+Comprehensive comparison of the **Current Website** and **New Website**.
 
 ### Visualizations
 
 - Revenue Comparison
-- Conversion Rate Comparison
-- Executive KPIs
-- Interactive Filters
-
----
-
-## 2️⃣ Experiment Deep Dive
-
-Detailed comparison between the Current Website and New Website.
-
-Includes:
-
-- Revenue Comparison
 - Purchase Comparison
+- Conversion Rate Comparison
+- Average Session Duration
+- Average Pages Viewed
 - Conversion Funnel
-- Session Analysis
-- User Engagement Analysis
+
+<img src="02_Experiment_Deep_Dive.png.png" width="100%">
 
 ---
 
-## 3️⃣ User Segmentation Dashboard
+## 👥 User Segmentation Dashboard
 
-Analyzes customer behavior across different user segments.
+Understand customer behavior across multiple dimensions.
 
-Includes:
+### Visualizations
 
-- Users by Country
-- Revenue by Device
-- Revenue by Browser
-- Traffic Source Analysis
-- Gender Distribution
+- 🌍 Users by Country
+- 💻 Revenue by Device
+- 🌐 Revenue by Browser
+- 🚦 Traffic Source Revenue
+- 👨 Gender Distribution
+- 📱 Users by Device
+
+<img src="03_User_Segmentation.png.png" width="100%">
 
 ---
 
-## 4️⃣ Business Insights & Recommendations
+## 💼 Business Insights & Recommendations
 
-Executive summary of the experiment.
+Executive-level summary of the A/B test.
 
-Includes:
+### Includes
 
-- Winning Variant
-- Revenue Lift
-- Conversion Lift
-- Executive Findings
+🏆 Winning Variant
+
+📈 Revenue Lift
+
+📊 Conversion Lift
+
+📋 Executive Summary
+
+💡 Business Recommendations
+
+📑 KPI Comparison
+
+<img src="04_Business_Insights.png.png" width="100%">
+
+---
+
+# 📈 Key Insights
+
+| Metric | Result |
+|---------|--------|
+| 🏆 Winning Variant | New Website |
+| 💰 Revenue | Increased |
+| 📈 Conversion Rate | Improved |
+| 🛒 Purchases | Increased |
+| 👥 User Engagement | Stable |
+| 📊 Overall Performance | Better |
+
+---
+
+# 💡 Business Recommendation
+
+Based on the analysis:
+
+✅ Deploy the **New Website**
+
+✅ Continue monitoring user engagement
+
+✅ Optimize checkout flow
+
+✅ Perform additional A/B tests
+
+✅ Monitor long-term customer retention
+
+---
+
+# 🚀 Skills Demonstrated
+
+### 📊 Product Analytics
+
+- A/B Testing
+- Funnel Analysis
+- KPI Development
+- Customer Segmentation
+
+---
+
+### 🗄 SQL
+
+- Joins
+- Aggregations
+- Business Queries
+- Data Analysis
+
+---
+
+### 📈 Power BI
+
+- Interactive Dashboards
+- DAX
+- KPI Cards
+- Drill-down Analysis
+- Executive Reporting
+
+---
+
+### 💼 Business Intelligence
+
+- Data Storytelling
+- Executive Dashboards
+- Decision Support
 - Business Recommendations
-- KPI Comparison Table
-
----
-
-# 📷 Dashboard Preview
-
-## Executive Overview
-
-<img src="Images/01_Executive_Overview.png" width="100%">
-
----
-
-## Experiment Deep Dive
-
-<img src="Images/02_Experiment_Deep_Dive.png" width="100%">
-
----
-
-## User Segmentation Dashboard
-
-<img src="Images/03_User_Segmentation.png" width="100%">
-
----
-
-## Business Insights & Recommendations
-
-<img src="Images/04_Business_Insights.png" width="100%">
-
----
-
-# 📈 Key Findings
-
-✅ The **New Website** generated significantly higher revenue.
-
-✅ Conversion Rate improved substantially.
-
-✅ Total Purchases increased.
-
-✅ User engagement remained stable while business performance improved.
-
-### Final Recommendation
-
-**Deploy the New Website to all users.**
-
-Continue monitoring:
-
-- Customer Retention
-- Checkout Funnel
-- Product Pages
-- User Engagement
 
 ---
 
 # 📂 Repository Structure
 
 ```text
-AB-Testing-Product-Analytics
+📁 AB-Testing-Product-Analytics
+
 │
-├── Dataset
-│   ├── fact_experiment.csv
-│   ├── dim_user.csv
-│   ├── dim_device.csv
-│   ├── dim_browser.csv
-│   ├── dim_date.csv
-│   ├── dim_traffic_source.csv
-│   └── dim_experiment.csv
+├── 📄 README.md
+├── 📊 Power BI Dashboard.pbix
+├── 📁 Dataset
+├── 📁 SQL Scripts
+├── 📁 Dashboard Images
 │
-├── Images
-│   ├── banner.png
-│   ├── 01_Executive_Overview.png
-│   ├── 02_Experiment_Deep_Dive.png
-│   ├── 03_User_Segmentation.png
-│   └── 04_Business_Insights.png
-│
-├── Python
-│
-├── SQL
-│
-├── Power BI
-│
-├── README.md
-│
-└── requirements.txt
+├── 🖼 01_Executive_Overview.png.png
+├── 🖼 02_Experiment_Deep_Dive.png.png
+├── 🖼 03_User_Segmentation.png.png
+└── 🖼 04_Business_Insights.png.png
 ```
-
----
-
-# 🚀 Skills Demonstrated
-
-### Product Analytics
-
-- A/B Testing
-- Product Metrics
-- Funnel Analysis
-- User Segmentation
-
-### Data Engineering
-
-- Python ETL
-- Synthetic Data Generation
-- Data Cleaning
-- Star Schema Modeling
-
-### SQL
-
-- Joins
-- Aggregations
-- Business Queries
-- KPI Analysis
-
-### Business Intelligence
-
-- Power BI
-- DAX
-- Dashboard Design
-- Interactive Reports
-
-### Business Analysis
-
-- Executive Reporting
-- Data Storytelling
-- KPI Development
-- Decision Support
-
----
-
-# 🔮 Future Improvements
-
-- Statistical Significance Testing
-- Bayesian A/B Testing
-- Customer Lifetime Value (CLV)
-- Cohort Analysis
-- Retention Analysis
-- Churn Prediction
-- Azure SQL Integration
-- Automated ETL Pipeline
-- Real-Time Power BI Dashboard
 
 ---
 
 # 👨‍💻 Author
 
-## Souvik Saha
+## **Sneha Saha**
 
-**Senior Process Engineer | Aspiring Product Analyst | Data Analytics Enthusiast**
+**Software QA Analyst | Aspiring Product Analyst | Data Analytics Enthusiast**
 
-📧 Email: your_email@example.com
+🔗 **LinkedIn**
 
-💼 LinkedIn: https://linkedin.com/in/your-linkedin
+https://www.linkedin.com/in/snehasaha2001/
 
-💻 GitHub: https://github.com/your-github
+💻 **GitHub**
+
+https://github.com/Snehasaha1
 
 ---
 
-<p align="center">
+<div align="center">
 
-⭐ If you found this project useful, please consider giving it a star!
+### ⭐ If you like this project, consider giving it a Star!
 
-</p>
+**Thank you for visiting my repository!**
+
+</div>
